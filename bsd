@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #key : bsd
 #group : license.bsd
 # --
-Copyright (c) ${1:`(substring (current-time-string) -4)`}, ${2:copyright holder}
+Copyright (c) ${1:`(substring (current-time-string) -4)`}, ${2:`(user-full-name)`}
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -46,3 +46,4 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+$0

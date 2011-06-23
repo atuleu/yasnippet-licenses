@@ -19,7 +19,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #key : apache2
 #group : license.apache
 # --
-   Copyright ${1:`(substring (current-time-string) -4)`} ${2:copyright holder}
+   Copyright ${1:`(substring (current-time-string) -4)`} ${2:`(user-full-name)`}
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -32,3 +32,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.
+$0

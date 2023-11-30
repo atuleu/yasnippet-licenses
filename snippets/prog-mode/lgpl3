@@ -15,11 +15,12 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #contributor : Jon Atkinson <jon@jonatkinson.co.uk>
-#name : GNU Lesser General Public License Version 3 - Source header
+#name : GNU Lesser General Public License Version 3
 #key : lgpl3
 #group : license.gnu
 # --
 ${1:One line to give the program's name and a brief idea of what it does.}
+
 Copyright (C) ${2:`(substring (current-time-string) -4)`}  ${3:`(user-full-name)`
 
 This file is part of ${4:Foobar}.
@@ -35,5 +36,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+along with {$4}.  If not, see <http://www.gnu.org/licenses/>.
+`(comment-region 1 (point))`
+
 $0

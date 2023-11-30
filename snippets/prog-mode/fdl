@@ -28,4 +28,6 @@ ${3:$$(yas/choose-value '("no Front-Cover Texts" "with the Front-Cover Texts
 being LIST"))}, and ${4:$$(yas/choose-value '("no Back-Cover Texts" "with the
 Back-Cover Texts being LIST"))}.  A copy of the license is included in the
 section entitled "GNU Free Documentation License".
+`(comment-region 1 (point))`
+
 $0

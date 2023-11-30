@@ -50,7 +50,7 @@
 	;; NOTE: we add the symbol `yasnippet-licenses-dir' rather than its
 	;; value, so that yasnippet will automatically find the directory
 	;; after this package is updated (i.e., moves directory).
-	(add-to-list 'yas-snippets-dirs 'yasnippet-licenses-dir t)
+	(add-to-list 'yas-snippet-dirs 'yasnippet-licenses-dir t)
 	(yas--load-snippet-dirs))
 
 ;;;###autoload

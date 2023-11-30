@@ -18,6 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #name : Affero GNU General Public License Version 3 - Source header
 #key : agpl3
 #group : license.gnu
+#expand-env: ((yas-after-exit-snippet-hook (lambda () (if (buffer-substring yas-snippet-beg yas-snippet-end) (let ((comment-empty-lines t)) (comment-region yas-snippet-beg yas-snippet-end))))))
 # --
 ${1:One line to give the program's name and a brief idea of what it does.}
 
@@ -35,6 +36,4 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
-`(comment-region 1 (point))`
-
 $0

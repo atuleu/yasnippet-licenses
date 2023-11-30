@@ -18,6 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #name : GNU Free Documentation License Version 1.3
 #key : fdl
 #group : license.gnu
+#expand-env: ((yas-after-exit-snippet-hook (lambda () (if (buffer-substring yas-snippet-beg yas-snippet-end) (let ((comment-empty-lines t)) (comment-region yas-snippet-beg yas-snippet-end))))))
 # --
 Copyright (C)  ${1:`(substring (current-time-string) -4)`}  ${2:`(user-full-name)`}.
 Permission is granted to copy, distribute and/or modify this document under the
@@ -28,6 +29,4 @@ ${3:$$(yas/choose-value '("no Front-Cover Texts" "with the Front-Cover Texts
 being LIST"))}, and ${4:$$(yas/choose-value '("no Back-Cover Texts" "with the
 Back-Cover Texts being LIST"))}.  A copy of the license is included in the
 section entitled "GNU Free Documentation License".
-`(comment-region 1 (point))`
-
 $0

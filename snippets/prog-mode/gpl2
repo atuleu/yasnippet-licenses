@@ -18,26 +18,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #name : GNU General Public License Version 2 - Source header
 #key : gpl2
 #group : license.gnu
+#expand-env: ((yas-after-exit-snippet-hook (lambda () (if (buffer-substring yas-snippet-beg yas-snippet-end) (let ((comment-empty-lines t)) (comment-region yas-snippet-beg yas-snippet-end))))))
 # --
-${1:One line to give the program's name and a brief idea of what it does.}
+${1:Foobar} - ${2:Description}.
 
-Copyright (C) ${2:`(substring (current-time-string) -4)`}  ${3:`(user-full-name)`
+Copyright (C) ${3:`(substring (current-time-string) -4)`}  ${4:`(user-full-name)`}
 
-This file is part of ${4:Foobar}.
+This file is part of $1.
 
-${4} is free software; you can redistribute it and/or
+$1 is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
 as published by the Free Software Foundation; either version 2
 of the License, or (at your option) any later version.
 
-${4} is distributed in the hope that it will be useful,
+$1 is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with ${4}; if not, write to the Free Software
+along with $1; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-`(comment-region 1 (point))`
-
 $0

@@ -18,6 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #name : MIT License (MIT)
 #key : mit
 #group : license.mit
+#expand-env: ((yas-after-exit-snippet-hook (lambda () (if (buffer-substring yas-snippet-beg yas-snippet-end) (let ((comment-empty-lines t)) (comment-region yas-snippet-beg yas-snippet-end))))))
 # --
 Copyright (c) ${1:`(substring (current-time-string) -4)`} ${2:`(user-full-name)`}
 
@@ -38,6 +39,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-`(comment-region 1 (point))`
-
 $0

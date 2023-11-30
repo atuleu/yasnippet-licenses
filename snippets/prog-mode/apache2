@@ -18,6 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #name : Apache License, Version 2.0
 #key : apache2
 #group : license.apache
+#expand-env: ((yas-after-exit-snippet-hook (lambda () (if (buffer-substring yas-snippet-beg yas-snippet-end) (let ((comment-empty-lines t)) (comment-region yas-snippet-beg yas-snippet-end))))))
 # --
 Copyright ${1:`(substring (current-time-string) -4)`} ${2:`(user-full-name)`}
 
@@ -32,6 +33,4 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-`(comment-region 1 (point))`
-
 $0
